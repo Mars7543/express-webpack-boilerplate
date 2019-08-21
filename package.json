@@ -6,10 +6,11 @@
     "scripts": {
         "build:webpack": "webpack --mode=production",
         "dev:webpack": "webpack-dev-server --mode=development",
-        "build:node": "babel src -d src/dist",
+        
+        "build:node": "rm -rf src/dist && babel src -d src/dist",
         "dev:node": "nodemon --exec babel-node src/server.js ",
-        "serve": "node dist/server.js",
-        "start": "nodemon --exec babel-node src/server.js"
+
+        "start": "node dist/server.js"
     },
     "keywords": [],
     "author": "",
