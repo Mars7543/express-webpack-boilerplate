@@ -10,6 +10,8 @@
         "build:node": "rm -rf src/dist && babel src -d src/dist",
         "dev:node": "nodemon --exec babel-node src/server.js ",
 
+        "build": "npm run build:webpack && npm run build:node",
+
         "start": "node dist/server.js"
     },
     "keywords": [],
