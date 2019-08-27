@@ -1,8 +1,10 @@
+// import sass files
 import '../styles/main.scss';
-require('webpack-jquery-ui');
+import Sortable from 'sortablejs';
 
-$(() => {
-    $('h1').click(function() {
-        $(this).toggleClass('green', 500);
-    })
-})
+const $el = document.querySelector('.sortable');
+const sortable = new Sortable($el, {
+    handle: '.handle',
+    animation: 150,
+    ghostClass: 'item-selected'
+});

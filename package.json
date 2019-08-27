@@ -6,12 +6,9 @@
     "scripts": {
         "build:webpack": "webpack --mode=production",
         "dev:webpack": "webpack-dev-server --mode=development",
-        
         "build:node": "rm -rf src/dist && babel src -d src/dist",
         "dev:node": "nodemon --exec babel-node src/server.js ",
-
         "build": "npm run build:webpack && npm run build:node",
-
         "start": "node dist/server.js"
     },
     "keywords": [],
@@ -39,6 +36,8 @@
         "webpack-jquery-ui": "^2.0.1"
     },
     "dependencies": {
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "jquery": "^3.4.1",
+        "sortablejs": "^1.10.0-rc3"
     }
 }

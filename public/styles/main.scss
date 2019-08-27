@@ -1,20 +1,15 @@
-$blue: #2196F3;
-$green: #4CAF50;
+@import "./base/base";
+@import "./layouts/layouts";
+// @import "./components/components";
 
 body {
-    text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Lato', sans-serif;
 }
 
-h1 {
-    color: blue;
-    cursor: pointer;
-}
-
-img {
-    width: 500px;
-}
-
-.green {
-    color: $green
+a {
+    text-decoration: none;
+    color: inherit;
 }

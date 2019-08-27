@@ -1,0 +1,61 @@
+main {
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: row;
+
+    .items {
+        text-align: center;
+        width: 49vw;
+        padding: 25px;
+        display: block;
+
+        ul {
+            width: 49vw;
+            list-style: none;
+            padding: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-inline-start: 0;
+            margin: 0 auto;
+
+            li {
+                display: flex;
+                flex-direction: row;
+
+                .material-icons {
+                    font-size: $text-3xl;
+                    margin-top: 15px;
+                    margin-right: 25px;
+                    cursor: pointer;
+                }
+
+                input {
+                    background-color: white;
+                    border: 1px solid $grey;
+                    box-sizing: border-box;
+                    color:$light-blue;
+                    padding: 20px;
+                    font-size: $text-xl;
+                    outline: none;
+                    width: 49vw;
+                }
+            }
+
+            .item-selected input {
+                background-color: $very-light-blue;
+                color: white;
+            }
+        }
+    }
+    
+    .timer {
+        text-align: center;
+        width: 49vw;
+    }
+    
+    .divider {
+        border-left: 1px solid $grey;
+        height: calc(100vh - 25px);
+    }
+}

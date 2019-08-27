@@ -23,10 +23,10 @@ module.exports = {
                     }
                 }
             },
-            {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
-            },
+            // {
+            //     test: /\.css$/i,
+            //     use: ['style-loader', 'css-loader'],
+            // },
             {
                 test: /\.scss$/,
                 use: [
@@ -55,11 +55,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './public/index.html'
         }),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery'",
-            "window.$": "jquery"
-        })
+        // new webpack.ProvidePlugin({
+        //     $: "jquery",
+        //     jQuery: "jquery",
+        //     "window.jQuery": "jquery'",
+        //     "window.$": "jquery"
+        // })
     ]
 }
